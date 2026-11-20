@@ -19,7 +19,7 @@ async def main() -> None:
     await db.connect()
 
     bot = Bot(
-        settings.bot_token,
+        settings.BOT_TOKEN,
         default=DefaultBotProperties(parse_mode=ParseMode.HTML),
     )
     dp = Dispatcher(storage=MemoryStorage())
